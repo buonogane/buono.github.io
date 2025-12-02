@@ -68,10 +68,11 @@ body {
   cursor: pointer; /* Show pointer on hover */
 }
 
-/* --- CARD HOVER EFFECT --- */
+/* --- CARD HOVER EFFECT (Shadow pop) --- */
 .card:hover {
-  transform: scale(1.01); /* Slight zoom on hover */
-  filter: brightness(0.85); /* Darken the image a bit */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  filter: brightness(0.95);
+  transition: box-shadow 0.3s, filter 0.3s;
 }
 
 /* --- CARD TITLE --- */
