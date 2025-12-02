@@ -8,11 +8,14 @@
 <style>
 /* Body settings: font, background, text color, line spacing */
 body {
-  margin: 0; /* remove default margin */
-  font-family: Arial, sans-serif; /* fallback font */
-  background: #f5f0e6; /* cream background */
-  color: #222; /* dark text color */
-  line-height: 1.6; /* spacing between lines */
+ margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f0e6;
+  color: #222;
+  line-height: 1.6;
+  display: flex;          /* flex layout */
+  flex-direction: column; /* top to bottom */
+  height: 100vh;          /* full viewport height */
 }
 
 /* Header styling: main page title */
@@ -29,15 +32,13 @@ body {
 
 /* Container for cards */
 .cards-container {
-  display: flex; /* flex layout */
-  flex-direction: row; /* horizontal layout */
-  justify-content: stretch; /* stretch cards to fill space */
-  align-items: stretch; /* stretch height */
-  height: calc(100vh - 100px); /* full viewport minus header/footer */
-  max-height: 500px; /* limit the maximum height */
-  gap: 0; /* remove space between cards */
-  padding: 0; /* remove container padding */
-  flex-wrap: nowrap; /* do not wrap */
+  flex: 1;              /* take all remaining space between header and footer */
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
 }
 
 /* Individual card styling */
