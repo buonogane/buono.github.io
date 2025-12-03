@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Explorations - Buonogane</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
   <style>
+    /* --- BODY AND LAYOUT --- */
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #f5f0e6;
       color: #222;
-      margin: 0;
-      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* full viewport height */
     }
 
-    h1 {
-      font-family: "Poppins", sans-serif;
+    /* --- HEADER --- */
+    header {
+      background: #111;
+      color: #f5f0e6;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      padding: 2rem 0;
+      flex-shrink: 0;
+    }
+    header a {
+      text-decoration: none;
+      color: #f5f0e6;
+    }
+
+    /* --- MAIN CONTENT --- */
+    main {
+      flex: 1; /* take up remaining space */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* vertical centering */
+      align-items: center;    /* horizontal centering */
+      padding: 2rem;
+      text-align: center;
+    }
+    main h1 {
+      font-family: 'Poppins', sans-serif;
       font-size: 3rem;
       margin-bottom: 1rem;
     }
-
-    p {
+    main p {
       font-size: 1.2rem;
       max-width: 600px;
       line-height: 1.6;
     }
 
-    /* HEADER */
-    header {
-      text-align: center;
-      padding: 1rem 0;        /* smaller padding */
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.2rem;      /* smaller than homepage */
+    /* --- FOOTER --- */
+    footer {
       background: #111;
       color: #f5f0e6;
+      text-align: center;
+      padding: 1rem 0;
+      flex-shrink: 0;
+      font-size: 0.9rem;
     }
-    header a {
-      text-decoration: none;
-      color: #f5f0e6;
-      font-weight: 600;
-    }
-
-    /* FOOTER (same style as home page) */
-    footer {
-      text-align: center; /* Center footer text */
-      padding: 1rem 2rem; /* Space around footer */
-      background: #111; /* Dark background */
-      color: white; /* White text */
-      font-size: 1rem; /* Same as header */
-    }
-
     footer a {
-      color: white; /* White links */
-      margin: 0 0.5rem; /* Space between icons */
-      display: inline-block; /* Inline layout for icons */
+      color: #f5f0e6;
+      margin: 0 0.5rem;
+      display: inline-block;
     }
-
     footer img {
-      width: 24px; /* Icon width */
-      height: 24px; /* Icon height */
-      vertical-align: middle; /* Align icon with text */
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
     }
-
   </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <a href="index.html">Buonogane</a>
   </header>
 
-  <h1>Explorations</h1>
-  <p>Under construction… brains and coffee in progress.</p>
+  <!-- MAIN CONTENT -->
+  <main>
+    <h1>Explorations</h1>
+    <p>Under construction… brains and coffee in progress.</p>
+  </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Buonogane — wandering, writing, becoming.</p>
     <p>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn">
-      </a>
-      <a href="https://www.instagram.com/yourprofile" target="_blank">
-        <img src="instagram.png" alt="Instagram">
-      </a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="instagram.png" alt="Instagram"></a>
     </p>
   </footer>
 </body>
