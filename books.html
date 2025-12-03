@@ -3,21 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Books - Buonogane</title>
+  <title>Buono's Books</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      background: #f5f0e6; 
-      color: #222; 
-      margin: 0; 
-      padding: 2rem;
+    /* --- BODY AND LAYOUT --- */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f0e6;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* full viewport height */
     }
-    h1 { font-family: 'Poppins', sans-serif; }
+
+    /* --- HEADER --- */
+    header {
+      background: #111;
+      color: #f5f0e6;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      text-align: left;
+      padding: 1rem 2rem;
+      flex-shrink: 0;
+    }
+    header a {
+      text-decoration: none;
+      color: #f5f0e6;
+    }
+
+    /* --- MAIN CONTENT --- */
+    main {
+      flex: 1; /* take up remaining space */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* vertical centering */
+      align-items: center;    /* horizontal centering */
+      padding: 2rem;
+      text-align: center;
+    }
+    main h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    main p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      background: #111;
+      color: #f5f0e6;
+      text-align: center;
+      padding: 0.5rem 0;
+      flex-shrink: 0;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #f5f0e6;
+      margin: 0 0.5rem;
+      display: inline-block;
+    }
+    footer img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
-  <h1>Books</h1>
-  <p>Something awesome is cooking… patience required (and maybe snacks).</p>
+  <!-- HEADER -->
+  <header>
+    <a href="index.html">Buono's Books</a>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h1>Books</h1>
+    <p>Something awesome is cooking… patience required (and maybe snacks).</p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Buonogane. All rights reserved. We’re only human.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+    </p>
+  </footer>
 </body>
 </html>
